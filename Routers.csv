@@ -1,7 +1,0 @@
-Name,Speed_Mbps_Gbps,Cost_Level,Security_Features,Use_Case_Keywords
-TP-Link Archer AX55,Up to 3 Gbps (Wi-Fi 6),Low,"WPA3, SPI Firewall, Guest Network","budget, fast, home, wifi6, secure"
-Netgear Nighthawk M1,Up to 1 Gbps (LTE),Mid,"Basic Firewall, MAC filtering","portable, travel, mobile, LTE, midrange"
-Juniper SRX300,"1 Gbps WAN, 4 Gbps LAN",Mid–High,"Stateful firewall, VPN, App security","business, secure, VPN, office, midsize"
-Cisco NCS 5002,Up to 100 Gbps,High,"Carrier-grade security, ACLs, MACsec","enterprise, highspeed, datacenter, secure"
-Ubiquiti EdgeRouter 4,3.4 Gbps (routing),Mid,"Firewall, VLAN, VPN","techsavvy, prosumer, VLAN, secure"
-MikroTik hEX RB750Gr3,1 Gbps,Low,"Firewall, VPN, NAT","lowcost, efficient, VPN, SOHO"

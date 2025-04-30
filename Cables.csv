@@ -1,0 +1,24 @@
+Cable_Type,Speed_Gbps,Max_Distance_m,Cost_Level,Shielding,Use_Case_Keywords
+OM1,1,300,Medium,N/A,"legacy,low_bandwidth,short_distance,budget_friendly,school,small_office,slow_network,older_equipment
+"
+OM2,1,600,Medium,N/A,"campus_network,medium_office,short_range_upgrade,low_cost_lan,floor_to_floor,building_backbone,moderate_speed
+"
+OM3,10,300,High,N/A,"data_center,enterprise_network,media_transfer,10gb_ethernet,backbone,fiber_backhaul,high_speed,server_room"
+OM4,10,550,High,N/A,"future_proofing,video_streaming,big_data,financial_networks,san_storage,high_performance,10g_40g_100g,fast_network"
+OM5,40,600,Very High,N/A,"cloud_data_center,swdm,100g_network,high_density,data_backbone,hyperscale,next_gen_infrastructure,long_distance_high_speed"
+OM4,40,150,High,N/A,"future_proofing,video_streaming,big_data,financial_networks,san_storage,high_performance,10g_40g_100g,fast_network"
+OM4,100,100,High,N/A,"future_proofing,video_streaming,big_data,financial_networks,san_storage,high_performance,10g_40g_100g,fast_network"
+OM4,1,1000,High,N/A,"future_proofing,video_streaming,big_data,financial_networks,san_storage,high_performance,10g_40g_100g,fast_network"
+OM1,10,33,Medium,N/A,"legacy,low_bandwidth,short_distance,budget_friendly,school,small_office,slow_network,older_equipment
+"
+OM2,10,82,Medium,N/A,"campus_network,medium_office,short_range_upgrade,low_cost_lan,floor_to_floor,building_backbone,moderate_speed
+"
+OM3,1,1000,High,N/A,"data_center,enterprise_network,media_transfer,10gb_ethernet,backbone,fiber_backhaul,high_speed,server_room"
+OM3,40,100,High,N/A,"data_center,enterprise_network,media_transfer,10gb_ethernet,backbone,fiber_backhaul,high_speed,server_room"
+OM3,100,70,High,N/A,"data_center,enterprise_network,media_transfer,10gb_ethernet,backbone,fiber_backhaul,high_speed,server_room"
+OM4,1,1000,High,N/A,"future_proofing,video_streaming,big_data,financial_networks,san_storage,high_performance,10g_40g_100g,fast_network"
+OM4,40,150,High,N/A,"future_proofing,video_streaming,big_data,financial_networks,san_storage,high_performance,10g_40g_100g,fast_network"
+OM4,100,100,High,N/A,"future_proofing,video_streaming,big_data,financial_networks,san_storage,high_performance,10g_40g_100g,fast_network"
+OM5,1,1000,Very High,N/A,"cloud_data_center,swdm,100g_network,high_density,data_backbone,hyperscale,next_gen_infrastructure,long_distance_high_speed"
+OM5,10,550,Very High,N/A,"cloud_data_center,swdm,100g_network,high_density,data_backbone,hyperscale,next_gen_infrastructure,long_distance_high_speed"
+OM5,100,150,Very High,N/A,"cloud_data_center,swdm,100g_network,high_density,data_backbone,hyperscale,next_gen_infrastructure,long_distance_high_speed"

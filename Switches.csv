@@ -1,6 +1,0 @@
-Name,Speed_Mbps_Gbps,Cost_Level,Security_Features,Use_Case_Keywords
-TP-Link TL-SG108,1 Gbps,Low,None (unmanaged switch),"budget, simple, plugandplay, home, smalloffice"
-Ubiquiti UniFi Lite 8 PoE,1 Gbps per port,Mid,"VLAN tagging, Port security","PoE, SMB, VLAN, managed, midrange"
-Cisco Catalyst C9300L-24P-4,1 Gbps per port,High,"802.1X, MACsec, TrustSec","enterprise, secure, managed, cisco, vlan"
-Cisco Catalyst 9500,10–40 Gbps uplinks,High,"Secure boot, Encrypted traffic","datacenter, highspeed, uplinks, secure, backbone"
-Netgear GS316,1 Gbps,Low,None (unmanaged),"basic, home, lowcost, unmanaged"
