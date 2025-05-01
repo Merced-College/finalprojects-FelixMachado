@@ -1,3 +1,10 @@
+
+/**
+* Felix Oliveira-Machado
+* 04/29/2025
+* FinalProject
+**/
+
 import java.util.*;
 import java.util.stream.Collectors;
 
