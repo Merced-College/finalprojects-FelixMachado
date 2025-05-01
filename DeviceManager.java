@@ -68,9 +68,16 @@ public class DeviceManager {
 
     public static void main(String[] args){
         //This will be used for testing
-/////////////////
-/// ////////////////////
-/// 
+        //String firewallsFilePath = "Firewalls.csv";
+        //String routersFilePath = "Routers.csv";
+       // String switchesFilePath = "Switches.csv";
+        //String cablesFilePath = "Cables.csv";
+
+        //This is used to show the file paths
+       // System.out.println("Firewalls file path: "+ firewallsFilePath);
+       // System.out.println("Routers file path: "+ routersFilePath);
+       // System.out.println("Switches file path: "+ switchesFilePath);
+       // System.out.println("Cables file path: "+ cablesFilePath);
     
 
     }
