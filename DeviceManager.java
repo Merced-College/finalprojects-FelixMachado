@@ -26,9 +26,9 @@ public class DeviceManager {
     private List<Map<String, String>>routersList = new ArrayList<>();
 
     public void loadCSV (String filePath, List<Map<String, String>> deviceList){
-        try(bufferedReader br = new BufferedReader(new FileReader(filePath))){
+        try(BufferedReader br = new BufferedReader(new FileReader(filePath))){
             String line;
-            String[] headers = br.readerLine().split(",");
+            String[] headers = br.readLine().split(",");
 
             while ((line = br.readLine()) !=null){
                 String[] values = line.split(",");
@@ -48,7 +48,7 @@ public class DeviceManager {
     public List<Map<String, String>> getDevicesByCost(List<Map<String, String>> deviceList, String costLevel){
         return deviceList.stream()
         .filter(device -> device.get("Cost_Level") != null && device.get("Cost_Level").equalsIgnoreCase(costLevel))
-        .collection(Collectors.toList());
+        .collect(Collectors.toList());
     }
     public List<Map<String, String>> getRoutersList(){
         return routersList;

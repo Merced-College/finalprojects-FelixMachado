@@ -54,7 +54,7 @@ public class RecomCorp {
 				System.out.println("Invalid input. Deaulting to 'Mid'");
 				yield"Mid";
 			}
-		}
+		};
 
 	}
 
@@ -70,7 +70,7 @@ public class RecomCorp {
 		//if there is no match the user will be notified
 		if (options.isEmpty()){
 			System.out.println("No matching options found.");
-		})
+		}
 		else{
 			for(Map<String, String> item : options){
 				System.out.println("-------------------------");
