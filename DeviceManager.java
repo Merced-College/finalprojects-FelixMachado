@@ -25,14 +25,5 @@ public class DeviceManager {
     private List<Map<String, String>>switchesList = new ArrayList<>();
     private List<Map<String, String>>routersList = new ArrayList<>();
 
-    public static void main(String[] args) {
-        // Define file paths relative to the project root created with the help of Copilot
-        String firewallsFilePath = "Firewalls.csv";
-        String switchesFilePath = "Switches.csv";
-        String routersFilePath = "Routers.csv";
-        String cablesFilePath = "Cables.csv";
-
-        
-     
-    }
+    
 }
