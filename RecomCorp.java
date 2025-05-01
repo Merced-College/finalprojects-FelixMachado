@@ -65,7 +65,7 @@ public class RecomCorp {
 
 	}
 
-	// This portion of the algorithm is used to fileter the devices by cost level
+	// This portion of the algorithm is used to filter the devices by cost level
 	private static List<Map<String, String>> filterByCostLevel(List<Map<String, String>> items, String costLevel){
 		return items.stream().filter(map-> costLevel.equalsIgnoreCase(map.get("Cost_Level")))
 				.collect(Collectors.toList());
@@ -74,6 +74,7 @@ public class RecomCorp {
 	// This portion of the algorithm is used to display the options that match the user's budget
 	private static void displayOptions(String category, List<Map<String, String>> options){
 		System.out.println("\nRecommended " + category +":");
+
 		//if there is no match the user will be notified
 		if (options.isEmpty()){
 			System.out.println("No matching options found.");

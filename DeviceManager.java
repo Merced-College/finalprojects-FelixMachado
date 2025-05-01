@@ -25,6 +25,8 @@ public class DeviceManager {
     private List<Map<String, String>>switchesList = new ArrayList<>();
     private List<Map<String, String>>routersList = new ArrayList<>();
 
+
+    //This portion of the algorithm is used to load the data from the CSV files
     public void loadCSV (String filePath, List<Map<String, String>> deviceList){
         try(BufferedReader br = new BufferedReader(new FileReader(filePath))){
             String line;
@@ -45,6 +47,7 @@ public class DeviceManager {
             e.printStackTrace();
         }
     }
+    // Here the the algorithm is filitering the devices by cost, as you can see it is referencing one of the columns in the CSV
     public List<Map<String, String>> getDevicesByCost(List<Map<String, String>> deviceList, String costLevel){
         return deviceList.stream()
         .filter(device -> device.get("Cost_Level") != null && device.get("Cost_Level").equalsIgnoreCase(costLevel))
