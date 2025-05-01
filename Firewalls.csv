@@ -1,0 +1,6 @@
+Name,Speed_Gbps,Cost_Level,Security_Features,Use_Case_Keywords
+Cisco ASA 5506-X,0.75,medium,"Stateful firewall, VPN, IPS, URL filtering","small business, secure access, vpn, mid performance"
+Fortinet FortiGate 60F,10.0,medium,"Next-gen firewall, IPS, malware protection, SD-WAN","branch office, sd-wan, malware protection, medium scale"
+Palo Alto PA-220,0.5,medium,"App-ID, Threat Prevention, WildFire analysis","small office, app control, threat detection"
+Ubiquiti UniFi Security Gateway,1.0,low,"Basic firewall, site-to-site VPN, DPI","home lab, cost effective, basic protection"
+Sophos XG 106,3.0,high,"Deep packet inspection, antivirus, app control","enterprise branch, high security, deep inspection"
