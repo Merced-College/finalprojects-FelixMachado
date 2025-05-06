@@ -40,7 +40,7 @@ public class DeviceManager {
                 for(int i = 0; i< headers.length && i < 3; i++){
                     row.put(headers[i].trim(), values[i].trim());
                 }
-                String fourthColumn = line.substring(line.indexOf("/"")),////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                String fourthColumn = line.substring(line.indexOf("/"")),/////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 deviceList.add(row);
             }
         }
