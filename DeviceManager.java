@@ -34,10 +34,13 @@ public class DeviceManager {
 
             while ((line = br.readLine()) !=null){
                 String[] values = line.split(",");
+                //add parsing for string
                 Map<String, String> row = new HashMap<>();
-                for(int i = 0; i< headers.length && i <values.length; i++){
+                //for(int i = 0; i< headers.length && i <values.length; i++){
+                for(int i = 0; i< headers.length && i < 3; i++){
                     row.put(headers[i].trim(), values[i].trim());
                 }
+                String fourthColumn = line.substring(line.indexOf("/"")),////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 deviceList.add(row);
             }
         }
