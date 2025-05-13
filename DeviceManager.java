@@ -27,25 +27,42 @@ public class DeviceManager {
 
 
     //This portion of the algorithm is used to load the data from the CSV files
-    public void loadCSV (String filePath, List<Map<String, String>> deviceList){
-        try(BufferedReader br = new BufferedReader(new FileReader(filePath))){
+    public void loadCSV(String filePath, List<Map<String, String>> deviceList) {
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             String[] headers = br.readLine().split(",");
 
-            while ((line = br.readLine()) !=null){
-                String[] values = line.split(",");
-                //add parsing for string
+            while ((line = br.readLine()) != null) {
+                // Use a regex to split the line while respecting quoted fields
+                String[] values = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+                if (values.length < headers.length) {
+                    // Skip lines that do not have enough columns
+                    continue;
+                }
+
                 Map<String, String> row = new HashMap<>();
-                //for(int i = 0; i< headers.length && i <values.length; i++){
-                for(int i = 0; i< headers.length && i < 3; i++){
+
+                // Process the first three columns
+                for (int i = 0; i < headers.length && i < 3; i++) {
                     row.put(headers[i].trim(), values[i].trim());
                 }
-                String fourthColumn = line.substring(line.indexOf("/"")),/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                // Handle the fourth column (substring between quotes)
+                if (values.length > 3) {
+                    String fourthColumn = values[3];
+                    if (fourthColumn.contains("\"")) {
+                        int startIndex = fourthColumn.indexOf("\"") + 1;
+                        int endIndex = fourthColumn.lastIndexOf("\"");
+                        if (startIndex < endIndex) {
+                            fourthColumn = fourthColumn.substring(startIndex, endIndex);
+                        }
+                    }
+                    row.put(headers[3].trim(), fourthColumn.trim());
+                }
+
                 deviceList.add(row);
             }
-        }
-        //This will help determine where the file is trying to read from
-        catch (IOException e){
+        } catch (IOException e) {
             System.out.println("Error reading file: " + filePath);
             e.printStackTrace();
         }
@@ -86,7 +103,5 @@ public class DeviceManager {
        // System.out.println("Cables file path: "+ cablesFilePath);
     
 
-    }
-
-    
+    } 
 }
